@@ -1,0 +1,47 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/60e2263cbdbcaf120c4b0135
+
+
+####
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "name",
+    "subscribedToChannel" : "channel"
+}
+
+###
+DELETE http://localhost:3000/subscribers/60e234a2383ed40ac8984290
+Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibmFtZSIsImlhdCI6MTYyNjczMjUyN30.pThcfZMpkr-L14sofpOi7nAl-Wn7CfO_uC4miTDz3BQ
+
+
+###
+
+PATCH http://localhost:3000/subscribers/60e2273fbdbcaf120c4b013b
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS29zdGlhIiwiaWF0IjoxNjI2NzMyMDY5fQ.2QgJULXzMVYeTYP10NG3MjfD2r4NeNBtBU_kWZMuqjw
+
+{
+    "name" : "name"
+}
+
+
+
+
+
+
+####
+//Authentification
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "admin" ,
+    "password" : "admin"
+}
