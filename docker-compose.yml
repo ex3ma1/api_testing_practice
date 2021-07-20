@@ -9,7 +9,7 @@ services:
         env_file: ./.env
 
     db:
-        image: mongo
+        image: mongo:4.2.12
         restart: 'always'
         ports:
             - '27017:27017'
